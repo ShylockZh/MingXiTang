@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+	<meta charset="UTF-8">
+	<title>茗溪堂 | 茶图库</title>
+	<link rel="icon" href="images/logo/logo.ico" sizes="64x64">
+	<meta name="description
+	" content="茗溪堂是弘扬茶叶,茶文化,茶道,茶艺等茶知识的平台,帮助大家了解学习茶马古道,茶道文化,茶艺知识,茶叶知识,茶道学习等相关知识,普及普洱茶,绿茶,黑茶,白茶,红茶,乌龙茶等各种茶叶的功效与用途.立志于弘扬传播一叶一世界,一茶一乾坤的中国茶道文化">
+	<meta name="keyword
+	" content="茗溪堂,茶,茶文化,茶知识,茶新闻,茶文化,茶道,茶艺,茶叶,普洱茶,绿茶,黑茶,白茶,红茶,乌龙茶,茶马古道,茶道文化,茶艺知识,茶叶知识,茶道学习"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/header&footer.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="viewer/css/viewer.min.css">
+	<link rel="stylesheet" href="css/gallery.css">
+	<style>
+		#dowebok { width: 1000px; margin: 0 auto; font-size: 0;}
+		#dowebok li { display: inline-block; width: 24%; margin-left: 1%; margin-top: 1%;height: auto;}
+		#dowebok li img { width: 100%;}
+	</style>
+</head>
+<body>
+	<!-- header -->
+	<header>
+		<div class="wrap">
+			<a href="index.html" title="茗溪堂" class="logo"></a>
+			<nav>
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="knowledge.html#1" onclick="location.reload()">茶知识</a></li>
+					<li class="active"><a href="gallery.html">茶图库</a></li>
+					<li><a href="news.html#1" onclick="location.reload()">茶新闻</a></li>
+					<li><a href="about.html">关于我们</a></li>
+					<li><a href="contact.html">以茶会友</a></li></ul>
+			</nav>
+		</div>
+	</header><!-- header end -->
+	<section class="gallery_container wrap">
+			<div class="tab">
+				<i class="fa fa-envira "></i>
+				<a href="gallery.html" class="selected">所有图片</a>
+				<a href="galleryDetail.html#1">绿茶</a>
+				<a href="galleryDetail.html#2">白茶</a>
+				<a href="galleryDetail.html#3">黄茶</a>
+				<a href="galleryDetail.html#4">青茶</a>
+				<a href="galleryDetail.html#5">红茶</a>
+				<a href="galleryDetail.html#6">黑茶</a>
+			</div>
+			<div class="pome clearfix">
+				<p>
+					雅燕飞觞，清谈挥麈，使君高会群贤。密云双凤，初破缕金团。窗外炉烟自动，开瓶试、一品香泉。轻涛起，香生玉乳，雪溅紫瓯圆。
+				</p>
+				<p>
+					娇鬟，宜美盼，双擎翠袖，稳步红莲。座中客翻愁，酒醒歌阑。点上纱笼画烛，花骢弄、月影当轩。频相顾，馀欢未尽，欲去且留连。
+				</p>
+				<p class="fr">[宋]米芾 《满庭芳·咏茶》</p>
+			</div>
+		
+		<ul id="dowebok">
+			<li><img src="images/gallery/gallery_1.jpg" alt="" data-original="images/gallery/gallery_1.jpg"></li>
+			<li><img src="images/gallery/gallery_2.jpg" alt="" data-original="images/gallery/gallery_2.jpg"></li>
+			<li><img src="images/gallery/gallery_3.jpg" alt="" data-original="images/gallery/gallery_3.jpg"></li>
+			<li><img src="images/gallery/gallery_4.jpg" alt="" data-original="images/gallery/gallery_4.jpg"></li>
+			<li><img src="images/gallery/gallery_5.jpg" alt="" data-original="images/gallery/gallery_5.jpg"></li>
+			<li><img src="images/gallery/gallery_6.jpg" alt="" data-original="images/gallery/gallery_6.jpg"></li>
+			<li><img src="images/gallery/gallery_7.jpg" alt="" data-original="images/gallery/gallery_7.jpg"></li>
+			<li><img src="images/gallery/gallery_8.jpg" alt="" data-original="images/gallery/gallery_8.jpg"></li>
+			<li><img src="images/gallery/gallery_9.jpg" alt="" data-original="images/gallery/gallery_9.jpg"></li>
+			<li><img src="images/gallery/gallery_10.jpg" alt="" data-original="images/gallery/gallery_10.jpg"></li>
+			<li><img src="images/gallery/gallery_11.jpg" alt="" data-original="images/gallery/gallery_11.jpg"></li>
+			<li><img src="images/gallery/gallery_12.jpg" alt="" data-original="images/gallery/gallery_12.jpg"></li>
+			<li><img src="images/gallery/gallery_13.jpg" alt="" data-original="images/gallery/gallery_13.jpg"></li>
+			<li><img src="images/gallery/gallery_14.jpg" alt="" data-original="images/gallery/gallery_14.jpg"></li>
+			<li><img src="images/gallery/gallery_15.jpg" alt="" data-original="images/gallery/gallery_15.jpg"></li>
+			<li><img src="images/gallery/gallery_16.jpg" alt="" data-original="images/gallery/gallery_16.jpg"></li>
+		</ul>
+
+		<script src="viewer/js/viewer.min.js"></script>
+		<script>
+		var viewer = new Viewer(document.getElementById('dowebok'), {
+			url: 'data-original'
+		});
+		</script>
+	</section>
+		<!-- footer -->
+	<footer>
+		<div class="footer_bottom">
+				Copyright &copy; 2017-2018 MingXiTang All rights reserved | 京ICP备 88888888号-88
+		</div>
+	</footer><!-- footer end -->
+</body>
+</html>

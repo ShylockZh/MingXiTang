@@ -1,0 +1,29 @@
+.tcenter{
+	text-align: center;
+}
+.detail_title{
+	width: 100%;
+	padding: 20px 0;
+	border-bottom: 1px dashed #ccc;
+}
+.list h3{
+	font-size: 28px;
+	margin-bottom: 10px;
+	font-weight: 400;
+}
+.list .detail_mess{
+	font-size: 14px;
+	color: #666;
+}
+.list img{
+	display: block;
+	width: 640px;
+	/*height: 430px;*/
+	margin:30px auto;
+}
+.list .detail_content p{
+	text-indent: 2em;
+	font-size: 17px;
+	line-height: 30px;
+	margin-bottom: 10px;
+}

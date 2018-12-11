@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>茗溪堂 | 关于我们</title>
+	<link rel="icon" href="images/logo/logo.ico" sizes="64x64">
+	<meta name="description
+	" content="茗溪堂是弘扬茶叶,茶文化,茶道,茶艺等茶知识的平台,帮助大家了解学习茶马古道,茶道文化,茶艺知识,茶叶知识,茶道学习等相关知识,普及普洱茶,绿茶,黑茶,白茶,红茶,乌龙茶等各种茶叶的功效与用途.立志于弘扬传播一叶一世界,一茶一乾坤的中国茶道文化">
+	<meta name="keyword
+	" content="茗溪堂,茶,茶文化,茶知识,茶新闻,茶文化,茶道,茶艺,茶叶,普洱茶,绿茶,黑茶,白茶,红茶,乌龙茶,茶马古道,茶道文化,茶艺知识,茶叶知识,茶道学习"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/header&footer.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/about.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=oMot5g4a45z0DWpVGv4mSGGldQcM4YXZ"></script>
+</head>
+<body>
+	<!-- header -->
+	<header>
+		<div class="wrap">
+			<a href="index.html" title="茗溪堂" class="logo"></a>
+			<nav>
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="knowledge.html#1" onclick="location.reload()">茶知识</a></li>
+					<li><a href="gallery.html">茶图库</a></li>
+					<li><a href="news.html#1" onclick="location.reload()">茶新闻</a></li>
+					<li class="active"><a href="about.html">关于我们</a></li>
+					<li><a href="contact.html">以茶会友</a></li></ul>
+			</nav>
+		</div>
+	</header><!-- header end -->
+	
+	<div class="container">
+		<div id="allmap"></div>
+		<div class="intro">
+			<p>
+				茗溪堂是中国优秀的茶类咨询网站。
+			</p>
+		
+			<p>
+				茗溪堂网络技术有限公司，致力于向群众推广茶文化史，认知各种茶叶，茶具，泡一壶好茶，品鉴茶，感悟茶，包括茶的品种鉴别、储存，挑选，泡茶工艺的技巧以及品茶的方式方法。让您更了解茶。
+			</p>
+			<p>
+				茗溪堂拥有一只包括技术、美工、编审在内的高效团队，茗溪堂有能力有信心为广大读者观众提供高速、有效的茶类文化资讯。
+			</p>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		var map = new BMap.Map("allmap");
+		var point = new BMap.Point(104.077806,30.552114);
+		var marker = new BMap.Marker(point);
+		map.addOverlay(marker); 
+		map.centerAndZoom("天府软件园-B5座", 18);
+
+		var label = new BMap.Label("茗溪堂网络技术有限公司", {
+				offset: new BMap.Size(15, -30)
+			});
+		label.setStyle({
+			width: "200px",
+			fontSize:'18px',
+			color: '#fff',
+			background: '#8BC34A',
+			border: '1px solid "#8BC34A"',
+			borderRadius: "5px",
+			textAlign: "center",
+			height: "26px",
+			lineHeight: "26px",
+			padding:" 5px 10px"
+		});
+		marker.setLabel(label);
+		map.enableScrollWheelZoom(true);
+
+	</script>
+
+	<!-- footer -->
+	<footer>
+		<div class="wrap">
+			<div class="footer_top">
+				<div class="footer_item">
+					<ul>
+						<li><a href="index.html">网站首页</a></li>
+						<li><a href="knowledge.html#1" onclick="location.reload()">茶知识</a></li>	<li><a href="gallery.html">茶图库</a></li>
+						<li><a href="news.html#1">茶新闻</a></li>
+						<li><a href="about.html">关于我们</a></li>
+						<li><a href="contact.html">以茶会友</a></li>
+					</ul>
+				</div>
+				<div class="footer_item">
+					<p class="item_title">联系我们</p>
+					<p class="item_text">联系电话：400-000-0000</p>
+					<p class="item_text">企业邮箱：213456789@163.com</p>
+					<p class="item_text">公司传真：+86-87654321</p>
+					<p class="item_text">公司地址：四川省成都市武侯区天华路</p>
+				</div>
+				<div class="footer_item"></div>
+				<div class="footer_item qrcode">
+					<img src="images/index/qrcode.jpg" alt="">
+					扫一扫，关注我们
+				</div>
+			</div>
+		</div>	
+		<div class="footer_bottom">
+				Copyright &copy; 2017-2018 MingXiTang All rights reserved | 京ICP备 88888888号-88
+		</div>
+	</footer><!-- footer end -->
+</body>
+</html>

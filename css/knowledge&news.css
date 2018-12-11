@@ -1,0 +1,113 @@
+.container{
+	width: 100%;
+}
+.container .pic {
+	width: 100%;
+	position: relative;
+	z-index: -1;
+}
+.container .pic img{
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+}
+.article{
+	width: 1130px;
+	margin:0 auto;
+	margin-top: -50px;
+}
+.article .position{
+	width: 100%;
+	height: 37px;
+	background-color: #fff;
+	border-top: 3px solid green;
+	padding: 5px 10px;
+	line-height: 37px;
+}
+.article .position a:hover,.position i{
+	color: green;
+}
+
+/*list*/
+.list{
+	width: 1010px;
+	min-height: 543px;
+	padding: 20px 70px 50px;
+	background-color: rgba(255,255,255,0.6);
+}
+.list .list_item{
+	width: 100%;
+	padding: 30px 0;
+	border-bottom: 1px dashed #ccc;
+	display: flex;
+	justify-content: space-between;
+}
+.list .list_item .img{
+	/*display: block;*/
+	width: 250px;
+	height: 150px;
+	overflow: hidden;
+	margin: 10px;
+}
+.list .list_item .img img{
+	width: 100%;
+	height: 100%;
+	transition: all .5s;
+	/*object-fit: cover;*/
+	margin:0;
+	cursor: pointer;
+}
+.list .list_item .img img:hover{
+	width: 120%;
+	height: 120%;
+	margin:-20px;
+}
+.list .list_item .info{
+	padding: 13px 50px;
+	width: 680px;
+}
+.list .list_item .info h3{
+	font-size: 20px;
+	margin-bottom: 3px;
+	cursor: pointer;
+}
+.list .list_item .info h3:hover{
+	text-decoration:underline;
+}
+.list .list_item .info span{
+	font-size: 14px;
+	color: #666;
+}
+.list .list_item .info p{
+	margin-bottom: 10px;
+}
+.list .list_item .example{
+	text-indent: 2em;
+    display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	overflow: hidden;
+}
+
+.page{
+	width: 100%;
+	padding: 20px 0;
+	text-align: center;
+}
+.prev_page,.page_button,.next_page{
+	padding: 5px 10px;
+	font-size: 15px;
+	border-radius: 5px;
+	margin:0 5px;
+	border:1px solid green;
+}
+.page_button{
+	margin: 0 2px;
+}
+.pageBtn{
+	transition: all .3s;
+}
+.pageBtn:hover,.page_active{
+	background-color: green;
+	color: #fff;
+}
